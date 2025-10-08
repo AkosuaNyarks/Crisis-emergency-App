@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div className="h-screen flex flex-col">
-      <CamouflageHeader onLongPress={handleOnLongPress} />;
+      <CamouflageHeader onLongPress={handleOnLongPress} />
       <JournalInterface />
     </div>
   );

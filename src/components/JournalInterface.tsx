@@ -55,7 +55,7 @@ export default function JournalInterface() {
 
         {/*Autosove indicator*/}
         {lastSaved && (
-          <div className="text-xz text-gray-500 italic">
+          <div className="text-xs text-gray-500 italic p-2 text-left ">
             {formatSavedTime()}
           </div>
         )}

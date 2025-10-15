@@ -33,7 +33,7 @@ export default function JournalInterface() {
     const diff = now.getTime() - lastSaved.getTime();
 
     if (diff < 5000) return "Saved just now";
-    if (diff < 6000) return "Saved moment ago";
+    if (diff > 6000) return "Saved moments ago";
 
     return `Saved at ${lastSaved.toLocaleTimeString([], {
       hour: "2-digit",
@@ -53,7 +53,7 @@ export default function JournalInterface() {
           })}
         </div>
 
-        {/*Autosove indicator*/}
+        {/*Autosave indicator*/}
         {lastSaved && (
           <div className="text-xs text-gray-500 italic p-2 text-left ">
             {formatSavedTime()}
